@@ -21,8 +21,8 @@ public class RatingsInfoService {
     @RequestMapping("/users/{userId}")
     public UserRatings getAllRatedMovies(@PathVariable("userId") int userId){
         List<Rating> ratings = Arrays.asList(
-                new Rating(111, 4),
-                new Rating(222, 5)
+                new Rating(650, 4),
+                new Rating(550, 5)
         );
         UserRatings userRatings=new UserRatings();
         userRatings.setUserRatings(ratings);
